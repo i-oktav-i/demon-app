@@ -1,20 +1,53 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <Menu class="menu" />
+    <router-view class="content"/>
+    <Footer class="footer" />
   </div>
 </template>
 
+<script lang="ts">
+import { Component, Prop, Vue } from 'vue-property-decorator';
+import Menu from '@/components/Menu/index.vue';
+import Footer from '@/components/Footer/index.vue';
+
+@Component({
+  name: 'App',
+  components: { Menu, Footer },
+})
+export default class App extends Vue {}
+</script>
+
 <style lang="scss">
+@import '~element-ui/lib/theme-chalk/index.css';
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .menu {
+    background-color: #fff;
+  }
+
+  .content {
+    margin-top: 30px;
+  }
+
+  .footer {
+    margin-top: auto;
+  }
 }
 
 #nav {
