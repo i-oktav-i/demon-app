@@ -13,7 +13,7 @@
       </router-link>
     </div>
     <p class="copy">
-      &copy; Сверх Демон, 2020
+      &copy; Щербинин Дмитрий, 2020
     </p>
   </div>
 </template>
@@ -36,13 +36,18 @@ export default class Footer extends Vue {
 <style lang="scss" scoped >
 .footer {
   &Root {
-    background-color: #1f2431;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    align-items: center;
+    border-top: 1px solid #000;
     padding: 10px 30px;
   }
 
   &Links {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-left: -15px;
     margin-bottom: -15px;
   }
@@ -50,7 +55,7 @@ export default class Footer extends Vue {
   &Link {
     display: block;
     text-decoration: none;
-    color: #fff;
+    color: #000;
     padding: 10px 15px;
     border: 1px solid #fff;
     border-radius: 5px;
@@ -58,8 +63,8 @@ export default class Footer extends Vue {
     margin-bottom: 15px;
 
     &:hover, &.active {
-      color: #8d96b2;
-      border-color: #8d96b2;
+      color: #373af3;
+      border-color: #373af3;
     }
   }
 

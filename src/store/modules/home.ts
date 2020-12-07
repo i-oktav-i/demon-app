@@ -9,9 +9,13 @@ export interface HomeState {
 
 @Module({ dynamic: true, store, name: 'home' })
 class Home extends VuexModule implements HomeState {
+  private IMAGES_ROOT = '/images';
+
   public sliderImages = [
-    'https://s1.1zoom.ru/b5050/984/Canada_Parks_Lake_Mountains_Forests_Scenery_Rocky_567540_1920x1200.jpg',
-    'https://avatanplus.com/files/effects/original/583eb65914425158b4f84bfb.jpg',
+    `${this.IMAGES_ROOT}/house01.png`,
+    `${this.IMAGES_ROOT}/house02.png`,
+    `${this.IMAGES_ROOT}/house03.png`,
+    `${this.IMAGES_ROOT}/house04.png`,
   ]
 }
 

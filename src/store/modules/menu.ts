@@ -16,16 +16,16 @@ class Menu extends VuexModule implements MenuState {
       route: '/',
     },
     {
-      title: 'Графики',
-      route: '/graphs',
+      title: 'Прогноз погоды',
+      route: '/weather',
     },
     {
-      title: 'ЧАВО',
+      title: 'FAQ',
       route: '/about',
     },
     {
-      title: 'Форма',
-      route: '/form',
+      title: 'Подбор садового участка',
+      route: '/choice',
     },
     {
       title: 'Продажа садовых участков',
@@ -33,7 +33,7 @@ class Menu extends VuexModule implements MenuState {
     },
   ]
 
-  logo = 'https://yt3.ggpht.com/a/AATXAJx_ORV9RJbkswXpGTgkpFM3yGGrOg6MNT3-9A=s900-c-k-c0xffffffff-no-rj-mo'
+  logo = '/images/logo.png'
 }
 
 export const MenuModule = getModule(Menu);

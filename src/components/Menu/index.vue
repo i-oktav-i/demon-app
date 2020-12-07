@@ -38,7 +38,7 @@ export default class Menu extends Vue {
 .menu {
   &Root {
     display: flex;
-    align-items: start;
+    align-items: center;
     border-bottom: 1px solid #000;
     padding: 20px;
   }
@@ -56,6 +56,7 @@ export default class Menu extends Vue {
   }
 
   .logo {
+    margin-right: 15px;
     width: 100px;
     height: 50px;
     background: no-repeat center / contain;

@@ -15,7 +15,7 @@ const routes: Array<RouteConfig> = [
     component: Home,
   },
   {
-    path: '/graphs',
+    path: '/weather',
     name: 'Graphs',
     component: Graphs,
   },
@@ -25,7 +25,7 @@ const routes: Array<RouteConfig> = [
     component: About,
   },
   {
-    path: '/form',
+    path: '/choice',
     name: 'Form',
     component: Form,
   },
