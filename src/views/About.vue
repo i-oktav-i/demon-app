@@ -43,10 +43,17 @@ export default class Menu extends Vue {
   .qna {
     max-width: 600px;
     margin: auto;
+    font-size: 20px;
+
+    & /deep/ .el-collapse-item__header{
+      font-size: 15px;
+      color: blue;
+    }
 
     &P {
       padding-left: 50px;
       text-align: left;
+      font-size: 15px;
     }
 
     &Wrapper {
