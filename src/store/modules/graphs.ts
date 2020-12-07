@@ -15,26 +15,30 @@ class Graphs extends VuexModule implements GraphsState {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
     datasets: [
       {
-        label: 'GitHub Commits',
-        backgroundColor: '#f87979',
-        data: [40, 20, 12, 39, 10, 40, 39, 10, 40, 20, 12, 11],
+        label: 'Количество солнечных дней',
+        backgroundColor: '#1976D2',
+        data: [20, 5, 27, 19, 17, 20, 22, 7, 28, 2, 11, 16],
       },
     ],
   }
 
   pieData: GraphsState['pieData'] = {
     datasets: [{
-      data: [10, 20, 30],
+      data: [10, 20, 30, 15, 15],
       backgroundColor: [
-        '#f00',
-        '#0f0',
-        '#00f',
+        '#E91E63',
+        '#3F51B5',
+        '#00BCD4',
+        '#4CAF50',
+        '#FF9800',
       ],
     }],
     labels: [
-      'Red',
-      'Yellow',
-      'Blue',
+      '-10 .. 0',
+      '0 .. +10',
+      '+10 .. +20',
+      '+20 .. +30',
+      '+30 .. +40',
     ],
   }
 }
