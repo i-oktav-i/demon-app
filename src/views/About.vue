@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1 class="title">Часто задаваеые вопросы</h1>
+    <h1 class="title">Часто задаваемые вопросы о садоводстве</h1>
     <div class="qnaWrapper">
       <el-collapse v-model="activeName">
         <el-collapse-item
