@@ -1,15 +1,15 @@
 <template>
   <div class="form">
     <el-input
-      placeholder="Введите что-то"
+      placeholder="Площадь участка (в квадратных метрах)"
       v-model="input1"
     />
     <el-input
-      placeholder="Введите что-то"
+      placeholder="Количество парковочных мест"
       v-model="input2"
     />
     <el-input
-      placeholder="Введите что-то"
+      placeholder="Тип домика"
       v-model="input3"
     />
 
