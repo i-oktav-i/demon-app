@@ -14,36 +14,62 @@ export interface StoreState {
 
 @Module({ dynamic: true, store, name: 'store' })
 class Store extends VuexModule implements StoreState {
+  private IMAGES_ROOT = '/images';
+
   public items: StoreState['items'] = [
     {
-      img: 'https://yt3.ggpht.com/a/AATXAJx_ORV9RJbkswXpGTgkpFM3yGGrOg6MNT3-9A=s900-c-k-c0xffffffff-no-rj-mo',
-      price: 1234,
-      text: '2fervbjdcn',
-      square: 123,
+      img: `${this.IMAGES_ROOT}/sell01.jpg`,
+      price: 1000000,
+      text: 'Домик в деревне',
+      square: 150,
     },
     {
-      img: 'https://yt3.ggpht.com/a/AATXAJx_ORV9RJbkswXpGTgkpFM3yGGrOg6MNT3-9A=s900-c-k-c0xffffffff-no-rj-mo',
-      price: 1234,
-      text: '2fervbjdcn',
-      square: 123,
+      img: `${this.IMAGES_ROOT}/sell02.jpg`,
+      price: 1000000,
+      text: 'Домик в деревне',
+      square: 150,
     },
     {
-      img: 'https://yt3.ggpht.com/a/AATXAJx_ORV9RJbkswXpGTgkpFM3yGGrOg6MNT3-9A=s900-c-k-c0xffffffff-no-rj-mo',
-      price: 1234,
-      text: '2fervbjdcn',
-      square: 123,
+      img: `${this.IMAGES_ROOT}/sell03.jpg`,
+      price: 1000000,
+      text: 'Домик в деревне',
+      square: 150,
     },
     {
-      img: 'https://yt3.ggpht.com/a/AATXAJx_ORV9RJbkswXpGTgkpFM3yGGrOg6MNT3-9A=s900-c-k-c0xffffffff-no-rj-mo',
-      price: 1234,
-      text: '2fervbjdcn',
-      square: 123,
+      img: `${this.IMAGES_ROOT}/sell04.jpg`,
+      price: 1000000,
+      text: 'Домик в деревне',
+      square: 150,
     },
     {
-      img: 'https://yt3.ggpht.com/a/AATXAJx_ORV9RJbkswXpGTgkpFM3yGGrOg6MNT3-9A=s900-c-k-c0xffffffff-no-rj-mo',
-      price: 1234,
-      text: '2fervbjdcn',
-      square: 123,
+      img: `${this.IMAGES_ROOT}/sell05.jpg`,
+      price: 1000000,
+      text: 'Домик в деревне',
+      square: 150,
+    },
+    {
+      img: `${this.IMAGES_ROOT}/sell06.jpg`,
+      price: 1000000,
+      text: 'Домик в деревне',
+      square: 150,
+    },
+    {
+      img: `${this.IMAGES_ROOT}/sell07.jpg`,
+      price: 1000000,
+      text: 'Домик в деревне',
+      square: 150,
+    },
+    {
+      img: `${this.IMAGES_ROOT}/sell08.jpg`,
+      price: 1000000,
+      text: 'Домик в деревне',
+      square: 150,
+    },
+    {
+      img: `${this.IMAGES_ROOT}/sell09.jpg`,
+      price: 1000000,
+      text: 'Домик в деревне',
+      square: 150,
     },
   ]
 }
