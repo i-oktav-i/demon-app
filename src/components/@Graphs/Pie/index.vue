@@ -11,6 +11,10 @@ export default class BarChart extends Mixins(Pie, mixins.reactiveData, mixins.re
   mounted() {
     this.renderChart(this.pieData, {
       responsive: true,
+      title: {
+        display: true,
+        text: 'Среднегодовая температура, ℃',
+      },
     });
   }
 

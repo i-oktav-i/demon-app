@@ -20,7 +20,7 @@ class Menu extends VuexModule implements MenuState {
       route: '/weather',
     },
     {
-      title: 'FAQ',
+      title: 'ЧАВО',
       route: '/about',
     },
     {

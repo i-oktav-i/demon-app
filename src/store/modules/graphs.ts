@@ -12,7 +12,7 @@ export interface GraphsState {
 @Module({ dynamic: true, store, name: 'graphs' })
 class Graphs extends VuexModule implements GraphsState {
   barData: GraphsState['barData'] = {
-    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    labels: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
     datasets: [
       {
         label: 'Количество солнечных дней',
